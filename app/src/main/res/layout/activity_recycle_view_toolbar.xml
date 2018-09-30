@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:paddingTop="25dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="79dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="40dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/iv_msg"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="40dp"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>
