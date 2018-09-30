@@ -1,0 +1,2 @@
+# ToolBarShadeDemo
+toolbar渐变联动recycleview和scrollviewDemo
